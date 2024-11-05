@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbernier <mbernier@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 17:06:54 by mbernier          #+#    #+#             */
-/*   Updated: 2024/10/23 17:06:54 by mbernier         ###   ########.fr       */
+/*   Created: 2024/11/05 09:34:18 by mbernier          #+#    #+#             */
+/*   Updated: 2024/11/05 09:34:18 by mbernier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #include "libft.h"
 
-int ft_isascii(int c)
+int ft_isprint (int c)
 {
-   while (c >= 0 && c <= 127)
-   {
-    return (c);
-   }
+    while (c > 32 && c < 127)
+        return (c);
 }
