@@ -26,6 +26,7 @@ void    *ft_memchr(const void *str, int c, size_t size);
 int     ft_memcmp(const void *s1, const void *s2, size_t size);
 void    *ft_memcpy(void *dest, const void *src, size_t size);
 void    *ft_memmove(void *dest, const void *src, size_t size);
+void    *ft_memset(void *b, int c, size_t len);
 
 // Funciones de manejo de cadenas
 char    *ft_itoa(int n);
@@ -49,9 +50,6 @@ void    ft_putstr_fd(char *s, int fd);
 static size_t ft_toklen(const char *s, char c);
 static	int  ft_char_in_set(char c, char const *set);
 
-//me quedan por añadir
-//strcmp
-//striteri
 
 
 #endif
